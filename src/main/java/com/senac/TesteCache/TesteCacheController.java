@@ -17,12 +17,12 @@ public class TesteCacheController {
    }
 
    @GetMapping("/getCacheValor")
-   public String getCacheValue(@RequestParam String key) {
+   public String getCacheValor(@RequestParam String key) {
        return testeCacheService.getValor(key);
    }
 
    @PostMapping("/limparCache")
-   public void clearCache() {
+   public void limparCache() {
        testeCacheService.limparCache();
    }
 }
